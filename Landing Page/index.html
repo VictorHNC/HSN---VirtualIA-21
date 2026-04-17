@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>HSN SHOP</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <!-- HEADER -->
+<header class="header">
+  <a href="index.html" class="logo">HSN</a>
+
+  <div class="search-box">
+    <input type="text" placeholder="Buscar...">
+  </div>
+
+  <!-- LINK AL PERFIL -->
+  <a href="perfil.html" class="profile">Perfil</a>
+</header>
+
+  <!-- TITULO PRINCIPAL -->
+  <section class="main-title">
+    <h1>HSN SHOP</h1>
+  </section>
+
+  <!-- SECCIÓN CATEGORÍAS -->
+<section class="categorias">
+
+  <a href="mujer.html" class="categoria mujer">
+    <img src="Mujer.png" alt="Mujer">
+    <div class="overlay">
+      <h2>MUJER</h2>
+    </div>
+  </a>
+
+  <a href="hombre.html" class="categoria hombre">
+    <img src="Hombre.png" alt="Hombre">
+    <div class="overlay">
+      <h2>HOMBRE</h2>
+    </div>
+  </a>
+
+</section>
+
+  <!-- SECCIÓN INFORMACIÓN -->
+  <section class="info">
+    <div class="info-text">
+      <h2>HSN</h2>
+      <p>
+        Sumérgete en un mundo de estilo y comodidad con nuestra exclusiva colección
+        de playeras diseñadas para expresar tu individualidad.
+        Fusionamos calidad y creatividad para ofrecerte una selección única.
+      </p>
+    </div>
+
+    <div class="info-images">
+      <img src="Moda1.png" class="img-small">
+      <img src="Moda2.png" class="img-large">
+    </div>
+  </section>
+
+<!-- SECCIÓN REDES SOCIALES -->
+<section class="social-section">
+
+  <div class="social-header">
+    <h2>Conecta con HSN</h2>
+    <p>Síguenos y descubre nuestras últimas colecciones, promociones exclusivas y contenido exclusivo.</p>
+  </div>
+
+  <div class="social-grid">
+
+    <div class="social-card">
+      <h3>Instagram</h3>
+      <p>Looks diarios, tendencias y outfits exclusivos.</p>
+      <a href="https://www.instagram.com/virtualfitai" target="_blank" class="btn-social">Seguir</a>
+    </div>
+
+    <div class="social-card">
+      <h3>Facebook</h3>
+      <p>Novedades, lanzamientos y promociones especiales.</p>
+      <a href="https://www.facebook.com/Garah.Victor" target="_blank" class="btn-social">Visitar</a>
+    </div>
+
+    <div class="social-card">
+      <h3>TikTok</h3>
+      <p>Videos creativos, estilos y contenido detrás de cámaras.</p>
+      <a href="https://www.tiktok.com/@vic.garahn" target="_blank" class="btn-social">Explorar</a>
+    </div>
+
+  </div>
+</section>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- IZQUIERDA -->
+<div class="footer-left">
+  <h2>Busca tu sucursal</h2>
+  <p>
+    Envíos para todo México, por el momento solo se cuenta con 5 sucursales en todo el país.
+  </p>
+
+  <button class="btn-dark">
+    Buscar <span>→</span>
+  </button>
+
+  <p class="small-text">
+    ¿Tuviste algún inconveniente?, háznoslo saber enviando tu reporte aquí.
+  </p>
+
+  <!-- BOTÓN WHATSAPP -->
+   
+  <a href="https://wa.me/527733332554?text=Hola, Informacion sobre un articulo" target="_blank" class="btn-dark">
+  Contactar <span>→</span>
+</a>
+</div>
+
+    <!-- CENTRO IMAGEN DECORATIVA -->
+    <div class="footer-center">
+      <img src="Decoracion.png" alt="Decoración">
+    </div>
+
+   <!-- DERECHA -->
+<div class="footer-right">
+  <div class="direccion">
+    <h3>Nos ubicamos en:</h3>
+    <p>
+      Avenida Universidad Tecnológica, No. 1000,<br>
+      El Carmen, 42830 Hgo.
+    </p>
+
+    <!-- MAPA -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2650.9347478074606!2d-99.34428953798597!3d20.009023659904102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d22d134f5ed9d9%3A0xaf1e77aba8c3a0a2!2sUniversidad%20Tecnol%C3%B3gica%20de%20Tula-Tepeji!5e0!3m2!1ses!2sus!4v1775698985501!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+</div>
+
+    </div>
+
+  </div>
+</footer>
+
+<!-- BOTÓN BURBUJA -->
+<div id="chat-toggle" onclick="toggleChat()">💬</div>
+
+<!-- CHAT -->
+<div id="chat">
+  <div id="chat-header">
+    Asistente HSN 🤖
+    <span id="chat-close" onclick="toggleChat()">✖</span>
+  </div>
+
+  <div id="chat-body"></div>
+
+  <div class="chat-input-area">
+    <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
+    <button onclick="responder()">Enviar</button>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
